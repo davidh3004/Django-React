@@ -7,9 +7,8 @@ Find the corresponding instructions under:
 ## 1. Create a virtual environment
 ```
 python -m venv venv
-# En Windows
 venv\Scripts\activate
-# En MacOS/Linux
+# O
 source venv/bin/activate
 ```
 
