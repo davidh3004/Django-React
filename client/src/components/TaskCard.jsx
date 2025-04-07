@@ -15,11 +15,11 @@ export function TaskCard({ task }) {
     
     
     >
-      <h1 className="font-bold uppercase">{task.title}</h1>
-      <p className="text-slate-400">{task.description}</p>
-      <p>Status: {task.done ? "Done" : "Pending"}</p>
-      <p>Created At: {new Date(task.dateCreated).toLocaleDateString()}</p>
-      <p>Updated At: {new Date(task.dateUpdated).toLocaleDateString()}</p>
+      <h1 className="font-bold uppercase text-2xl">{task.title}</h1>
+      <p className="text-xl">{task.description}</p>
+      <p className="text-slate-400 text-sm">Status: {task.done ? "✅" : "❌"}</p>
+      <p className="text-slate-400 text-sm">Created At: {new Date(task.dateCreated).toLocaleDateString()}</p>
+      <p className="text-slate-400 text-sm">Updated At: {new Date(task.dateUpdated).toLocaleDateString()}</p>
     </div>
   );
 }
